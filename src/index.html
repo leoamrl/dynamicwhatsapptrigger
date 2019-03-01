@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<title>Dynamic Whatsapp Trigger</title>
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,500,900" rel="stylesheet">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div class="dwc">
+		<button class="dwc__trigger" id="dwc_trigger">
+			<span class="dwc__badge">
+				2
+				<span class="dwc__wave"></span>
+			</span>
+		</button>
+
+		<div class="dwc__window" id="dwc_window">
+			<header class="dwc__header">
+				<figure class="dwc__figure">
+					<span class="dwc__status dwc__status--off"></span>
+					<img src="img/img-corretor.png" class="img-responsive">
+
+					<figcaption>
+						<h1 class="dwc__name">Nome do Corretor</h1>
+					</figcaption>
+				</figure>
+			</header>
+
+			<main class="dwc__chat">
+				<div class="dwc__message dwc__message--received">Olá, tudo bem?</div>
+				<div class="dwc__message dwc__message--received">Sou o corretor da $empresa.</div>
+				<div class="dwc__message dwc__message--received">Você gostaria de iniciar uma conversa no whatsapp?</div>
+				<div class="dwc__buttons">
+					<button class="dwc__button dwc__button--yes" id="dwc_yes">Sim</button>
+					<button class="dwc__button dwc__button--no" id="dwc_no">Não</button>
+				</div>
+				<div class="dwc__message dwc__message--sent">gostaria sim</div>
+			</main>
+
+			<form action="" class="dwc__form">
+				<input type="text" placeholder="Digite aqui" class="dwc__input">
+			</form>
+		</div>
+	</div>
+	<script async src="scripts.js"></script>
+
+</body>
+</html>
