@@ -40,7 +40,7 @@
 					<img src="img/img-corretor.png" class="img-responsive">
 
 					<figcaption>
-						<h1 class="dwc__name">Nome do Corretor</h1>
+						<h1 class="dwc__name"></h1>
 					</figcaption>
 				</figure>
 				<div class="dwc__window-close" id="dwc_window_close"><span></span></div>
@@ -48,7 +48,7 @@
 
 			<main class="dwc__chat">
 				<div class="dwc__message dwc__message--received">Olá, tudo bem?</div>
-				<div class="dwc__message dwc__message--received">Sou o corretor da $empresa.</div>
+				<div class="dwc__message dwc__message--received">Sou o corretor virtual da <span class="dwc__name-company"></span>.</div>
 				<!-- <div class="dwc__buttons">
 					<button class="dwc__button dwc__button--yes" id="dwc_yes">Sim</button>
 					<button class="dwc__button dwc__button--no" id="dwc_no">Não</button>
@@ -57,7 +57,13 @@
 				<!-- <div class="dwc__message dwc__message--sent">gostaria sim</div> -->
 			</main>
 
-			<form action="" class="dwc__form">
+			<form action="" class="dwc__form" onkeypress="return event.keyCode != 13;">
+				<input type="text" class="dwc__input dwc__input--name dwc__hidden" placeholder="Digite seu nome...">
+				<input type="text" class="dwc__input dwc__input--phone dwc__hidden" placeholder="Digite seu telefone...">
+				<input type="text" class="dwc__input dwc__input--mail dwc__hidden" placeholder="Digite seu e-mail...">
+				<button class="dwc__button dwc__button--next dwc__button--next-phone dwc__hidden" type="button"></button>
+				<button class="dwc__button dwc__button--next dwc__button--next-mail dwc__hidden" type="button"></button>
+				<button class="dwc__button dwc__button--send dwc__hidden"></button>
 			</form>
 		</div>
 	</div>
