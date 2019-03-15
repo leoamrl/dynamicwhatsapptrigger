@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 // npm install gulp gulp-sass gulp-concat gulp-minify gulp-htmlmin gulp-connect gulp-autoprefixer gulp-minify-css gulp.spritesmith
 
+=======
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 var gulp = require('gulp'),
 		sass = require('gulp-sass'),
 		concat = require('gulp-concat'),
@@ -14,7 +17,11 @@ var gulp = require('gulp'),
 
 gulp.task('connectDist', function() {
   connect.server({
+<<<<<<< HEAD
 		name: 'Dynamic Whatsapp Chat',
+=======
+		name: 'Dynamic Whatsapp Trigger',
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 		root: 'dist',
 		port: 3000,
 		livereload: true

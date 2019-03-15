@@ -1,6 +1,9 @@
 @import 'variables';
 @import 'keyframes';
+<<<<<<< HEAD
 @import 'mixins';
+=======
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 
 @import 'reset';
 @import 'grid';
@@ -13,10 +16,14 @@
 
 .dwc {
 	&__trigger {
+<<<<<<< HEAD
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
+=======
+		position: relative;
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 		position: fixed;
 		bottom: 20px; left: 20px;
 		width: 50px; height: 50px;
@@ -25,11 +32,15 @@
 		border-radius: 50px;
 		z-index: 1000;
 		cursor: pointer;
+<<<<<<< HEAD
 		@include transition();
+=======
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 		&:hover {
 			background: $green-hover;
 			box-shadow: 0px 5px 30px -4px rgba(0,0,0,0.3);
 		}
+<<<<<<< HEAD
 
 		&-icon {
 			width: 30px; height: 30px;
@@ -62,6 +73,8 @@
 			width: 160px;
 			animation: appearSecondMessage 4s ease 21s 1 normal;
 		}
+=======
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 	}
 	&__badge {
 		position: absolute;
@@ -74,6 +87,7 @@
 		font-weight: 700;
 		color: #ffffff;
 		z-index: 1;
+<<<<<<< HEAD
 		cursor: pointer;
 		transition: all .2s cubic-bezier(.13,-0.43,.58,.94);
 		&.open {
@@ -83,6 +97,12 @@
 	&__wave {
 		position: absolute;
 		top: -15px; left: -15px;
+=======
+	}
+	&__wave{
+		position: absolute;
+		top: -15px;left: -15px;
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 		width: 50px; height: 50px;
 		background: rgba(173,34,33,0.4);
 		border-radius: 50px;
@@ -94,6 +114,7 @@
 		animation-iteration-count: infinite;
 		z-index: -1;
 	}
+<<<<<<< HEAD
 	&__subtitle {
 		margin-top: 3px;
 		text-transform: uppercase;
@@ -105,11 +126,17 @@
 	&__window {
 		position: absolute;
 		bottom: -100%; left: 20px;
+=======
+	&__window {
+		position: absolute;
+		bottom: 100px; left: 20px;
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 		width: calc(100% - 40px);
 		max-width: 400px;
 		border-radius: 10px;
 		background: #ffffff;
 		box-shadow: 0px 3px 20px -4px rgba(0,0,0,0.1);
+<<<<<<< HEAD
 		@include transition();
 		&.open {
 			bottom: 100px;
@@ -117,6 +144,10 @@
 	}
 	&__header {
 		position: relative;
+=======
+	}
+	&__header {
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 		padding: 10px 20px;
 		background: $dark-grey;
 		border-top-right-radius: 10px;
@@ -151,6 +182,7 @@
 		font-size: 1.6rem;
 		font-weight: 400;
 	}
+<<<<<<< HEAD
 	&__window-close {
 		position: absolute;
 		top: -10px; right: -10px;
@@ -201,6 +233,10 @@
 		display: flex;
 		flex-direction: column;
 		overflow-y: auto;
+=======
+	&__chat {
+		padding: 20px 16px;
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 	}
 	&__message {
 		display: table;
@@ -215,6 +251,7 @@
 			border-bottom-right-radius: 10px;
 		}
 		&--sent {
+<<<<<<< HEAD
 			background: #dfdfdf;
 			border-bottom-left-radius: 10px;
 			margin-left: auto;
@@ -244,20 +281,29 @@
 					animation-delay: .4s;
 				}
 			}
+=======
+			float: right;
+			background: #dfdfdf;
+			border-bottom-left-radius: 10px;
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 		}
 	}
 	&__buttons {
 		display: flex;
+<<<<<<< HEAD
 		align-items: center;
 		margin-bottom: 10px;
 		&-legend {
 			font-size: 1.2rem;
 			opacity: .5;
 		}
+=======
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 	}
 	&__button {
 		margin-right: 10px;
 		padding: 4px 10px;
+<<<<<<< HEAD
 		border: 1px solid $blue;
 		border-radius: 20px;
 		cursor: pointer;
@@ -268,10 +314,22 @@
 			&:hover {
 				border-color: $blue-hover;
 				background: $blue-hover;
+=======
+		border: 1px solid #0366d6;
+		border-radius: 20px;
+		cursor: pointer;
+		&--yes {
+			background: #0366d6;
+			color: #ffffff;
+			&:hover {
+				border-color: #317ace;
+				background: #317ace;
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 			}
 		}
 		&--no {
 			background: #ffffff;
+<<<<<<< HEAD
 			color: $blue;
 			&:hover {
 				border-color: $blue-hover;
@@ -313,6 +371,21 @@
 		&--mail {
 			height: 60px;
 		}
+=======
+			color: #0366d6;
+			&:hover {
+				border-color: #317ace;
+				background: #f9f9f9;
+			}
+		}
+	}
+	&__input {
+		width: 100%; height: 60px;
+		padding-left: 20px;
+		border-top: 1px solid #dfdfdf;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+>>>>>>> a79f239f985ec43362e8af8df3ecbbee520e861e
 	}
 }
 
