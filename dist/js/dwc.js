@@ -31,3 +31,5 @@ dwc_trigger.addEventListener('click', handleOpen);
 dwc_window_close.addEventListener('click', handleClose);
 dwc_nextPhone.addEventListener('click', handleNextPhone);
 dwc_nextMail.addEventListener('click', handleNextMail);
+
+Array.from(document.querySelectorAll('.dwc__chat')).forEach(el => new SimpleBar);

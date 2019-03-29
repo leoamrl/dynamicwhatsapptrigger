@@ -704,7 +704,18 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow-y: auto; }
+  overflow-y: auto;
+  /* Track */
+  /* Handle */ }
+  .dwc__chat::-webkit-scrollbar {
+    width: 20px; }
+  .dwc__chat::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px grey;
+            box-shadow: inset 0 0 5px grey;
+    border-radius: 10px; }
+  .dwc__chat::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 10px; }
 
 .dwc__message {
   display: table;
